@@ -26,7 +26,7 @@ menuIconContainer.addEventListener("click", () => {
 // ТАЙМЕР
 document.addEventListener('DOMContentLoaded', function () {
     // конечная дата, например 1 июля 2021
-    const deadline = new Date(2022, 10, 19);
+    const deadline = new Date(2022, 10, 15);
     // id таймера
     let timerId = null;
     // склонение числительных
