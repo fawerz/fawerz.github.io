@@ -15,7 +15,7 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     overflow-y: scroll;
-    background-image: url('../img/back.svg');
+    background-image: url('../img/background.svg');
     margin-top: 48px;
     height: 100%;
 }
@@ -415,7 +415,10 @@ nav .desktop-nav li a:hover {
     justify-content: center;
     top: 200px;
     position: relative;
-    font-size: 46px;line-height: 1.1;letter-spacing: 0.017em;font-weight: 800;
+    font-size: 46px;
+    line-height: 1.1;
+    letter-spacing: 0.017em;
+    font-weight: 800;
     color: #333333;
 
 }
