@@ -14,23 +14,22 @@ html {
 body {
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    background-image: url('../img/background.svg');
     margin-top: 48px;
     height: 100%;
-    background-color: #000000;
+    background-color: #303030;
 }
 
 /* Desktop Nav */
 .nav-container {
-    background: rgba(0, 0, 0);
+    background: #272727;
     height: 48px;
     z-index: 300;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 1px solid #ffffff;
 }
 
@@ -181,7 +180,7 @@ nav .desktop-nav li a:hover {
     top: 100%;
     position: relative;
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: #272727;
     min-height: 170px;
     display: flex;
     justify-content: center;
