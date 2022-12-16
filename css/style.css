@@ -392,10 +392,9 @@ nav .desktop-nav li a:hover {
 
     #headerMover {
         margin: 0;
-        width: 99%;
+        width: 100%;
         box-sizing: border-box;
         position: relative;
-        margin-left: 3px;
     }
 
     .pageContent {
