@@ -258,9 +258,9 @@ nav .desktop-nav li a:hover {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 50%;
         height: 0vh;
-        background: #000;
+        background: #000000;
         justify-content: start;
         overflow: hidden;
         z-index: -1;
@@ -268,8 +268,8 @@ nav .desktop-nav li a:hover {
     }
 
     .nav-container.active .desktop-nav {
-        height: 200vh;
-        overflow-y: auto;
+        height: 100vh;
+        overflow-y: hidden;
     }
 
     .nav-container .desktop-nav li {
