@@ -12,7 +12,8 @@ html {
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', HelveticaNeue, sans-serif;
+    color: rgb(214, 214, 214);
     font-weight: 300;
     margin-top: 48px;
     height: 100%;
@@ -28,7 +29,7 @@ section {
 /* Desktop Nav */
 .nav-container {
     background: #272727;
-    height: 48px;
+    height: 44px;
     z-index: 300;
     position: fixed;
     left: 0;
@@ -50,6 +51,7 @@ nav .desktop-nav {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    height: 44px;
 }
 
 nav .desktop-nav li a {
@@ -388,73 +390,65 @@ nav .desktop-nav li a:hover {
         transition: all 400ms ease;
     }
 
-    .pad {
-        display: block;
-        padding: 15px 20px;
-        background: rgb(39,39,39);
-        border-radius: 10px;
-        margin-bottom: 50px;
-        margin-top: 30px;
-        height: 150px;
-        width: 98%;
-    }
 
-    .pad1 {
-        display: block;
-        padding: 15px 20px;
-        background: rgb(39,39,39);
-        border-radius: 10px;
-        margin-bottom: 50px;
-        height: 250px;
-        width: 98%;
-    }
 }
 
 /* Планшеты */
-@media (min-width: 768px) {
-    .pad {
-        display: block;
-        padding: 15px 20px;
-        background: rgb(39,39,39);
-        border-radius: 10px;
-        margin-bottom: 50px;
-        margin-top: 30px;
-        height: 150px;
-        width: 96%;
-    }
-
-    .pad1 {
-        display: block;
-        padding: 15px 20px;
-        background: rgb(39,39,39);
-        border-radius: 10px;
-        margin-bottom: 50px;
-        height: 250px;
-        width: 96%;
-    }
-}
+@media (min-width: 768px) {}
 
 /* Ноутбуки */
-@media (min-width: 1024px) {
-    .pad {
-        display: block;
-        padding: 15px 20px;
-        background: rgb(39,39,39);
-        border-radius: 10px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        height: 150px;
-        width: 97%;
+@media (min-width: 1076px) {
+    #headerMover {
+        width: 1076px;
+        margin: 0 auto;
+        position: relative;
+        zoom: 1;
+        box-sizing: border-box;
+        margin-top: 70px;
+        margin-bottom: 30px;
     }
 
-    .pad1 {
-        display: block;
-        padding: 15px 20px;
-        background: rgb(39,39,39);
+    .pageContent {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mainContainer {
+        width: 821px;
+        float: left;
+    }
+
+    .discussionList {
         border-radius: 10px;
-        margin-bottom: 50px;
-        height: 250px;
-        width: 97%;
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+    }
+
+    .sidebar {
+        float: left;
+        margin-left: 15px;
+        width: 240px;
+    }
+
+    .sidebarWrapper.section {
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+        border-radius: 10px;
+        margin: 0 0 15px;
+    }
+
+    .section.visitorPanel {
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+        border-radius: 10px;
+        margin: 0 0 15px;
+    }
+
+    .section.monthMaecenas {
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+        border-radius: 10px;
+        margin: 0 0 15px;
     }
 }
 
@@ -470,25 +464,58 @@ nav .desktop-nav li a:hover {
 
 /* Компьютеры */
 @media (min-width: 1280px) {
-    .pad {
-        display: block;
-        padding: 15px 20px;
-        background: rgb(39,39,39);
-        border-radius: 10px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        height: 150px;
-        width: 1060px;
+    #headerMover {
+        width: 1076px;
+        margin: 0 auto;
+        position: relative;
+        zoom: 1;
+        box-sizing: border-box;
+        margin-top: 70px;
+        margin-bottom: 30px;
     }
 
-    .pad1 {
-        display: block;
-        padding: 15px 20px;
-        background: rgb(39,39,39);
-        border-radius: 10px;
-        margin-bottom: 50px;
-        height: 250px;
-        width: 1060px;
+    .pageContent {
+        display: flex;
+        justify-content: space-between;
     }
+
+    .mainContainer {
+        width: 821px;
+        float: left;
+    }
+
+    .discussionList {
+        border-radius: 10px;
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+    }
+
+    .sidebar {
+        float: left;
+        margin-left: 15px;
+        width: 240px;
+    }
+
+    .sidebarWrapper.section {
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+        border-radius: 10px;
+        margin: 0 0 15px;
+    }
+
+    .section.visitorPanel {
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+        border-radius: 10px;
+        margin: 0 0 15px;
+    }
+
+    .section.monthMaecenas {
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+        border-radius: 10px;
+        margin: 0 0 15px;
+    }
+
 
 }
