@@ -268,7 +268,7 @@ nav .desktop-nav li a:hover {
     }
 
     .nav-container.active .desktop-nav {
-        height: 100vh;
+        height: 200vh;
         overflow-y: auto;
     }
 
