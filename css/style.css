@@ -249,9 +249,192 @@ nav .desktop-nav li a:hover {
     position: relative;
 }
 
+/* Компьютеры */
+@media (min-width: 1076px) {
+    #headerMover {
+        width: 1076px;
+        margin: 0 auto;
+        position: relative;
+        zoom: 1;
+        box-sizing: border-box;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
 
-/* Телефоны */
-@media (max-width: 768px) {
+    .pageContent {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mainContainer {
+        width: 821px;
+        float: left;
+    }
+
+    .discussionList {
+        border-radius: 10px;
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+    }
+
+    .sidebar {
+        float: left;
+        margin-left: 15px;
+        width: 240px;
+    }
+
+    .sidebar_mob {
+        display: none;
+    }
+
+    .sidebarWrapper.section {
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+        border-radius: 10px;
+        margin: 0 0 15px;
+    }
+
+    .section.visitorPanel {
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+        border-radius: 10px;
+        margin: 0 0 15px;
+    }
+
+    .section.monthMaecenas {
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+        border-radius: 10px;
+        margin: 0 0 15px;
+    }
+
+    .CreateThreadButton {
+        color: #f5f5f5;
+        width: 100%;
+        font-size: 13px;
+        color: rgb(214, 214, 214);
+        text-decoration: none;
+        background-color: rgb(34, 142, 93);
+        background-position: center;
+        padding: 0px 15px;
+        border-style: none;
+        border-radius: 6px;
+        user-select: none;
+        font-style: normal;
+        text-align: center;
+        outline: none;
+        line-height: 34px;
+        display: inline-block;
+        cursor: pointer;
+        box-sizing: border-box;
+        vertical-align: top;
+        font-weight: 600;
+        transition: background 0.8s;
+        overflow: hidden;
+        height: 34px;
+    }
+
+    .discussionListItem {
+        position: relative;
+        border-radius: 10px;
+        transition: background .15s;
+        clear: both;
+        margin: 0 -12px;
+        padding: 0px 12px;
+    }
+
+    .listBlock.lastPost {
+        width: 130px;
+        float: right;
+        padding: 11px;
+        overflow: hidden;
+    }
+
+    .avatar {
+        margin: 0 3px 0 0;
+        float: left;
+        color: rgb(214, 214, 214);
+        text-decoration: none;
+
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        padding-top: 1px;
+        border-radius: 50%;
+    }
+
+    .lastPostInfo {
+        padding-top: 3px;
+        display: block;
+        white-space: nowrap;
+        font-weight: 700;
+    }
+
+    .username {
+        color: #aaa;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .style21 {
+        color: rgb(148, 148, 148);
+    }
+
+    .PreviewTooltip {
+        display: block;
+        padding: 20px 0;
+        text-decoration: none;
+        color: rgb(214, 214, 214);
+    }
+
+    .title {
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 80%;
+        padding-left: 1px;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .secondRow {
+        margin: 8px 0 0;
+        line-height: 18px;
+        font-size: 12px;
+        display: block;
+    }
+
+    .info-separator {
+        width: 3px;
+        height: 3px;
+        background: rgb(34, 142, 93);
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+
+    .startDate {
+        display: inline-block;
+        color: rgb(148, 148, 148);
+
+
+    }
+
+    .discussionListItem:hover {
+        background-color: #303030;
+    }
+
+    .mobile--LastReply {
+        display: none;
+    }
+}
+
+/* Планшеты */
+@media (max-width: 1075px) {
 
     .nav-container .desktop-nav {
         flex-direction: column;
@@ -442,197 +625,536 @@ nav .desktop-nav li a:hover {
         display: none;
     }
 
-}
-
-/* Планшеты */
-@media (min-width: 768px) {
-    #headerMover {
-        width: 760px;
-        margin: 0 auto;
-        position: relative;
-        zoom: 1;
-        box-sizing: border-box;
-        margin-top: 70px;
-        margin-bottom: 30px;
-    }
-
-    .pageContent {
+    .top {
         display: flex;
         justify-content: space-between;
     }
 
-    .mainContainer {
-        width: 821px;
+    .CreateThreadButton {
+        float: none;
+        color: #f5f5f5;
+        display: block;
+        font-size: 13px;
+        text-decoration: none;
+        background-color: rgb(34, 142, 93);
+        background-position: center;
+        padding: 0px 15px;
+        border-style: none;
+        border-radius: 6px;
+        user-select: none;
+        font-style: normal;
+        text-align: center;
+        outline: none;
+        line-height: 34px;
+        display: inline-block;
+        cursor: pointer;
+        box-sizing: border-box;
+        vertical-align: top;
+        font-weight: 600;
+        transition: background 0.8s;
+        overflow: hidden;
+        height: 34px;
+        width: 100%;
+        margin-right: 12px;
+    }
+
+    .NodeListToggle {
+        width: 100%;
+        display: block;
+        font-size: 13px;
+        color: rgb(214, 214, 214);
+        text-decoration: none;
+        background-color: rgb(54, 54, 54);
+        background-position: center;
+        padding: 0px 15px;
+        border-style: none;
+        border-radius: 6px;
+        user-select: none;
+        font-style: normal;
+        text-align: center;
+        outline: none;
+        line-height: 34px;
+        display: inline-block;
+        cursor: pointer;
+        box-sizing: border-box;
+        vertical-align: top;
+        font-weight: 600;
+        transition: background 0.8s;
+        overflow: hidden;
+        height: 34px;
+
+    }
+
+    .discussionListItem {
+        position: relative;
+        border-radius: 10px;
+        transition: background .15s;
+        clear: both;
+        margin: 0 -12px;
+        padding: 0px 12px;
+    }
+
+    .listBlock.lastPost {
+        width: 130px;
+        float: right;
+        padding: 11px;
+        overflow: hidden;
+    }
+
+    .avatar {
+        margin: 0 3px 0 0;
         float: left;
+        color: rgb(214, 214, 214);
+        text-decoration: none;
+
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        padding-top: 1px;
+        border-radius: 50%;
+    }
+
+    .lastPostInfo {
+        padding-top: 3px;
+        display: block;
+        white-space: nowrap;
+        font-weight: 700;
+    }
+
+    .username {
+        color: #aaa;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .style21 {
+        color: rgb(148, 148, 148);
+    }
+
+    .PreviewTooltip {
+        display: block;
+        padding: 20px 0;
+        text-decoration: none;
+        color: rgb(214, 214, 214);
+    }
+
+    .title {
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 90%;
+        padding-left: 1px;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .secondRow {
+        margin: 8px 0 0;
+        line-height: 18px;
+        font-size: 12px;
+        display: block;
+    }
+
+    .info-separator {
+        width: 3px;
+        height: 3px;
+        background: rgb(34, 142, 93);
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+
+    .startDate {
+        display: inline-block;
+        color: rgb(148, 148, 148);
+
+
+    }
+
+    .discussionListItem:hover {
+        background-color: #303030;
+    }
+
+    .username_mob {
+        color: rgb(148, 148, 148);
+    }
+
+    .startDate_mob {
+        display: none;
+    }
+
+}
+
+/* Телефоны */
+@media (max-width: 612px) {
+
+    .nav-container .desktop-nav {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0vh;
+        background: #272727;
+        justify-content: start;
+        overflow: hidden;
+        z-index: -1;
+        transition: all 500ms ease;
+    }
+
+    .nav-container.active .desktop-nav {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+    .nav-container .desktop-nav li {
+        width: 100%;
+        padding: 0 32px;
+    }
+
+    .nav-container .desktop-nav li:first-child {
+        margin-top: 120px;
+    }
+
+    .nav-container .desktop-nav .link-logo,
+    .nav-container .desktop-nav .link-search,
+    .nav-container .desktop-nav .link-account {
+        display: none;
+    }
+
+    .nav-container .desktop-nav li a {
+        padding: 16px 0;
+        display: inline-block;
+        border-bottom: 1px solid #616161;
+        width: 100%;
+        font-size: 17px;
+        transform: translateY(-80px);
+        opacity: 0;
+        transition: all 700ms ease;
+    }
+
+    .nav-container.active .desktop-nav li a {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* Mobile Nav */
+    nav .mobile-nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    nav .menu-icon-container {
+        width: 20px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    nav .menu-icon {
+        position: relative;
+        width: 100%;
+    }
+
+    nav .menu-icon .line-1,
+    nav .menu-icon .line-2 {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: #fff;
+        transition-property: transform, top;
+        transition-delay: 0ms, 160ms;
+        transition-duration: 200ms;
+    }
+
+    nav .menu-icon .line-1 {
+        top: -4px;
+    }
+
+    nav .menu-icon .line-2 {
+        top: 4px;
+    }
+
+    .nav-container.active nav .menu-icon-container .menu-icon .line-1 {
+        top: 0;
+        transform: rotateZ(45deg);
+        transition-property: top, transform;
+        transition-delay: 0ms, 160ms;
+        transition-duration: 200ms;
+    }
+
+    .nav-container.active nav .menu-icon-container .menu-icon .line-2 {
+        top: 0;
+        transform: rotateZ(-45deg);
+        transition-property: top, transform;
+        transition-delay: 0ms, 160ms;
+        transition-duration: 200ms;
+    }
+
+    /* account Icon Animation */
+    .nav-container.active .mobile-nav .link-account {
+        transform: translateY(8px);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav-container .mobile-nav .link-account {
+        transition: all 500ms ease;
+    }
+
+    /* Nav Move Up */
+    .nav-container nav.move-up {
+        margin-top: -40px;
+    }
+
+    /* Desktop Nav Move Down */
+    nav .desktop-nav.move-down li:first-child {
+        margin-top: 150px;
+    }
+
+    nav .desktop-nav.move-down li {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Nav Animation */
+    .nav-container nav {
+        transition: all 400ms ease;
+    }
+
+    #headerMover {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .pageContent {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .mainContainer {
+        float: none;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .sidebar_mob {
+        display: block;
+        float: none;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .sidebarWrapper {
+        padding: 15px 20px;
+        background: rgb(39, 39, 39);
+        border-radius: 10px;
+        margin-bottom: 15px;
+        margin-top: 70px;
     }
 
     .discussionList {
         border-radius: 10px;
         padding: 15px 20px;
         background: rgb(39, 39, 39);
-    }
-
-    .sidebar {
-        float: left;
-        margin-left: 15px;
-        width: 240px;
-    }
-
-    .sidebar_mob {
-        display: none;
-    }
-
-    .sidebarWrapper.section {
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
-        border-radius: 10px;
-        margin: 0 0 15px;
-    }
-
-    .section.visitorPanel {
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
-        border-radius: 10px;
-        margin: 0 0 15px;
-    }
-
-    .section.monthMaecenas {
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
-        border-radius: 10px;
-        margin: 0 0 15px;
-    }
-
-}
-
-/* Ноутбуки */
-@media (min-width: 1076px) {
-    #headerMover {
-        width: 1076px;
-        margin: 0 auto;
-        position: relative;
-        zoom: 1;
-        box-sizing: border-box;
-        margin-top: 70px;
         margin-bottom: 30px;
     }
 
-    .pageContent {
+    .sidebarWrapper.section {
+        display: none;
+    }
+
+    .section.visitorPanel {
+        display: none;
+    }
+
+    .section.monthMaecenas {
+        display: none;
+    }
+
+    .top {
         display: flex;
         justify-content: space-between;
     }
 
-    .mainContainer {
-        width: 821px;
-        float: left;
+    .CreateThreadButton {
+        float: none;
+        color: #f5f5f5;
+        display: block;
+        font-size: 13px;
+        text-decoration: none;
+        background-color: rgb(34, 142, 93);
+        background-position: center;
+        padding: 0px 15px;
+        border-style: none;
+        border-radius: 6px;
+        user-select: none;
+        font-style: normal;
+        text-align: center;
+        outline: none;
+        line-height: 34px;
+        display: inline-block;
+        cursor: pointer;
+        box-sizing: border-box;
+        vertical-align: top;
+        font-weight: 600;
+        transition: background 0.8s;
+        overflow: hidden;
+        height: 34px;
+        width: 100%;
+        margin-right: 12px;
     }
 
-    .discussionList {
+    .NodeListToggle {
+        width: 100%;
+        display: block;
+        font-size: 13px;
+        color: rgb(214, 214, 214);
+        text-decoration: none;
+        background-color: rgb(54, 54, 54);
+        background-position: center;
+        padding: 0px 15px;
+        border-style: none;
+        border-radius: 6px;
+        user-select: none;
+        font-style: normal;
+        text-align: center;
+        outline: none;
+        line-height: 34px;
+        display: inline-block;
+        cursor: pointer;
+        box-sizing: border-box;
+        vertical-align: top;
+        font-weight: 600;
+        transition: background 0.8s;
+        overflow: hidden;
+        height: 34px;
+
+    }
+
+    .discussionListItem {
+        position: relative;
         border-radius: 10px;
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
+        transition: background .15s;
+        clear: both;
+        margin: 0 -12px;
+        padding: 0px 12px;
     }
 
-    .sidebar {
-        float: left;
-        margin-left: 15px;
-        width: 240px;
-    }
-
-    .sidebar_mob {
+    .listBlock.lastPost {
         display: none;
     }
 
-    .sidebarWrapper.section {
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
-        border-radius: 10px;
-        margin: 0 0 15px;
+    .avatar {
+        display: none;
+
     }
 
-    .section.visitorPanel {
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
-        border-radius: 10px;
-        margin: 0 0 15px;
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        padding-top: 1px;
+        border-radius: 50%;
     }
 
-    .section.monthMaecenas {
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
+    .lastPostInfo {
+        padding-top: 3px;
+        display: block;
+        white-space: nowrap;
+        font-weight: 700;
+    }
+
+    .username {
+        color: #aaa;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .username_mob {
+        color: rgb(148, 148, 148);
+    }
+
+    .style21 {
+        color: rgb(148, 148, 148);
+    }
+
+    .PreviewTooltip {
+        display: block;
+        padding: 13px 0;
+        text-decoration: none;
+        color: rgb(214, 214, 214);
+    }
+
+    .title {
+        font-size: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 100%;
+        padding-left: 1px;
+        text-overflow: ellipsis;
+        font-weight: 600;
+    }
+
+    .secondRow {
+        margin: 8px 0 0;
+        line-height: 18px;
+        font-size: 12px;
+        display: block;
+    }
+
+    .info-separator_mob {
+        width: 3px;
+        height: 3px;
+        background: rgb(34, 142, 93);
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+
+    .startDate_mob {
+        display: inline-block;
+        color: rgb(148, 148, 148);
+
+
+    }
+
+    .discussionListItem:hover {
+        background-color: #303030;
+    }
+
+    .mobile--LastReply {
+        background: rgb(45, 45, 45);
+        padding: 4px 9px;
+        display: block;
         border-radius: 10px;
-        margin: 0 0 15px;
+        margin: 4px 0 0px;
+        font-weight: 600;
+    }
+
+    .info-separator {
+        display: none;
+    }
+
+    .startDate {
+        display: none;
     }
 }
-
 
 @media (max-width: 1100px) {
     .nav-container nav {
         width: 100%;
         padding: 0 32px;
     }
-
-}
-
-
-/* Компьютеры */
-@media (min-width: 1280px) {
-    #headerMover {
-        width: 1076px;
-        margin: 0 auto;
-        position: relative;
-        zoom: 1;
-        box-sizing: border-box;
-        margin-top: 70px;
-        margin-bottom: 30px;
-    }
-
-    .pageContent {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .mainContainer {
-        width: 821px;
-        float: left;
-    }
-
-    .discussionList {
-        border-radius: 10px;
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
-    }
-
-    .sidebar {
-        float: left;
-        margin-left: 15px;
-        width: 240px;
-    }
-
-    .sidebar_mob {
-        display: none;
-    }
-
-    .sidebarWrapper.section {
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
-        border-radius: 10px;
-        margin: 0 0 15px;
-    }
-
-    .section.visitorPanel {
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
-        border-radius: 10px;
-        margin: 0 0 15px;
-    }
-
-    .section.monthMaecenas {
-        padding: 15px 20px;
-        background: rgb(39, 39, 39);
-        border-radius: 10px;
-        margin: 0 0 15px;
-    }
-
 
 }
