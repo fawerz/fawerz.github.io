@@ -431,6 +431,7 @@ nav .desktop-nav li a:hover {
     .mobile--LastReply {
         display: none;
     }
+
 }
 
 /* Планшеты */
@@ -1149,6 +1150,7 @@ nav .desktop-nav li a:hover {
     .startDate {
         display: none;
     }
+
 }
 
 @media (max-width: 1100px) {
